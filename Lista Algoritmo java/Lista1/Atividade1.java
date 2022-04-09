@@ -3,11 +3,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Atividade1{
 
-    public static void linha(){ 
+    static void linha(){ 
         // função que multiplica o texto criando uma linha
         String c = "";
         for(short i = 0; i < 100; i++){
-            c = c + "=";
+            c += "=";
         }
         System.out.println(c);
     }
