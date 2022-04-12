@@ -4,7 +4,7 @@ no semestre. No final informar o nome do aluno e a sua média (aritmética).*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Atividade5 {
+public class Atividade005 {
     public static void main(String[] args) {
         String nome;
         ArrayList<Float> notas = new ArrayList<Float>();

@@ -3,7 +3,7 @@ fórmula de conversão é: F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit 
 temperatura em Celsius. */
 
 import java.util.Scanner;
-public class Atividade7 {
+public class Atividade007 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

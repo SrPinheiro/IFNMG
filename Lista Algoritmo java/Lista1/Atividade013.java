@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*13. Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja
 maior que 10.*/
 
-public class Atividade13 {
+public class Atividade013 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Digite um numero:");

@@ -2,7 +2,7 @@
 e a divisão dos números lidos. */
 
 import java.util.Scanner;
-public class Atividade2 {
+public class Atividade002 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

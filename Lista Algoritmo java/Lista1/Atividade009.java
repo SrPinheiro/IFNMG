@@ -1,7 +1,7 @@
 /*9. Faça um algoritmo que receba um valor que foi depositado e exiba o valor com rendimento após
 um mês. Considere fixo o juro da poupança em 0,70% a. m.*/
 import java.util.Scanner;
-public class Atividade9 {
+public class Atividade009 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

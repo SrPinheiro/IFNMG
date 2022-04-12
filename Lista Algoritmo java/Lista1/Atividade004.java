@@ -4,7 +4,7 @@ sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário no 
 
 import java.util.Scanner;
 
-public class Atividade4{
+public class Atividade004{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 

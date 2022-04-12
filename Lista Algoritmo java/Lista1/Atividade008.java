@@ -5,7 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
-public class Atividade8 {
+public class Atividade008 {
     public static void main(String[] args){
        Scanner scan = new Scanner(System.in);
         float cotacao=0, dolar=0;

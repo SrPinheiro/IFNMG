@@ -3,7 +3,7 @@
 se que o preço de custo receberá um acréscimo de acordo com um percentual informado pelo
 usuário.*/
 import java.util.Scanner;
-public class Atividade11 {
+public class Atividade011 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("qual o preço de fabrica do produto?");

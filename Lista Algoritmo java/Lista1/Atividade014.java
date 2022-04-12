@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //14. Escrever um algoritmo que leia dois valores inteiro distintos e informe qual é o maior.
-public class Atividade14 {
+public class Atividade014 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Digite o primeiro numero:");

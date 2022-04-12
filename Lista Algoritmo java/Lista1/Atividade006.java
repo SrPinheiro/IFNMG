@@ -2,7 +2,7 @@
 A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A.
 Apresentar os valores trocados.*/
 
-public class Atividade6 {
+public class Atividade006 {
     public static String rt(String x, String y){
         return x;
 

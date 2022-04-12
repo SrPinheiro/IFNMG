@@ -1,7 +1,7 @@
  // 1 - Faça um algoritmo que receba dois números e exiba o resultado da sua soma.
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Atividade1{
+public class Atividade001{
 
     static void linha(){ 
         // função que multiplica o texto criando uma linha

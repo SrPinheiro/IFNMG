@@ -5,7 +5,7 @@ de 28% e os impostos 45%. Escrever um algoritmo que leia o custo de fábrica de 
 informe o custo ao consumidor do mesmo.*/
 import java.util.Scanner;
 
-public class Atividade12 {
+public class Atividade012 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         float fabrica = 0f;
