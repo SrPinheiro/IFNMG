@@ -1,7 +1,6 @@
 public class Variaveis {
     public static void main(String[] args) {
-        // Tipo ~ nome ~ value
-            //variaveis do tipo inteiro:
+        
                 //tipo primitivo = byte  classe = Byte
                 //menor numero = -128  maior numero = 127
                 //ocupa 1byte
@@ -30,7 +29,6 @@ public class Variaveis {
                 System.out.println(numerolong);
         
             
-            //variaveis do tipo Real
                 //tipo = float   Classe = Float
                 //menor numero = -(3,4.10^38) maior numero = 3,4.10^38
                 //ocupa 4 bytes
@@ -44,8 +42,8 @@ public class Variaveis {
                 double numeroflutuante2 = 3.14159;
                 System.out.println(numeroflutuante2);
         
+
         
-            //variaveis do tipo caractere
                 //tipo= char   Classe= Character
                 //ocupa 1 byte
                 char letra = 'c';
@@ -57,7 +55,7 @@ public class Variaveis {
                 String nome = "Leonardo";
                 System.out.println(nome);
         
-            //variaveis do tipo boolean
+        
                 //tipo= boolean   Classe= Boolean
                 //ocupa= 1 bit
                 boolean boleana = false; // true ou false
