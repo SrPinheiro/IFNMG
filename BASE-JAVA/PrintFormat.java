@@ -12,7 +12,7 @@ public class PrintFormat{
          parametros format=
          
          %s = Tipo string (%s funciona para qualquer valor, pois todos eles podem ser convertidos para string)
-         %S = Tipos String (soq toda a string aparece maiscula)
+         %S = Tipos String (soq toda a string aparece maiuscula)
          %d = Tipo Inteiro
          %f = Tipo flutuante
          %b = Tipo bollean
