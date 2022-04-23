@@ -1,7 +1,7 @@
 public class Comentarios{
       public static void main(String[] args){
         
-       // isso gere um comentario de apenas uma linha
+       // isso gera um comentario de apenas uma linha
         
         /*
         isso gera
