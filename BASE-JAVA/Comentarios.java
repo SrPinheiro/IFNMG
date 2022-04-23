@@ -10,10 +10,13 @@ public class Comentarios{
         
         */
         
-        /*voce também
+        /**
+        *voce também
         *pode fazer
         *desse jeito
         *para comentarios
+        *no Javadoc
+        *@since 1.0
         */
         
       }
