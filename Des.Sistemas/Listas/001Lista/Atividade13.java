@@ -7,7 +7,7 @@ programa que solicite do usuário uma duração (tempo) em minutos e calcule a
 altura necessária para que ao ser largada a pedra caia e atinja o solo no tempo
 informado pelo usuário. */
 
-        // altura = (a*t)²/2
+        // altura = a*t²/2
         double aceleracao = 20.2; // m/s²
 
         Scanner scan = new Scanner(System.in);
