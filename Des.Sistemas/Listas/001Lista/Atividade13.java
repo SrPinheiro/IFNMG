@@ -12,11 +12,11 @@ informado pelo usuário. */
 
         Scanner scan = new Scanner(System.in);
         System.out.println("-------------------------------------------------");
-        System.out.println("Digite o tempo desejado(em segundos):");
+        System.out.println("Digite o tempo desejado(em minutos):");
         System.out.println("-------------------------------------------------");
         double tempo = scan.nextDouble();
         
-        double delta = aceleracao * Math.pow(tempo,2);
+        double delta = aceleracao * Math.pow(tempo * 60, 2);
 
         scan.close();
         System.out.println("-------------------------------------------------");
