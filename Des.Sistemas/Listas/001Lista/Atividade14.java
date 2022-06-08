@@ -19,10 +19,14 @@ public class Atividade14 {
             System.out.printf("Maior: %s\n", numeros[0]);
             System.out.printf("Menor: %s\n", numeros[1]);
             System.out.println("-------------------------------------------------");
-        }else{
+        }else if(numeros[0] < numeros[1]){
             System.out.println("-------------------------------------------------");
             System.out.printf("Maior: %s\n", numeros[1]);
             System.out.printf("Menor: %s\n", numeros[0]);
+            System.out.println("-------------------------------------------------");
+        }else{
+            System.out.println("-------------------------------------------------");
+            System.out.println("Os numeros sao iguais!");
             System.out.println("-------------------------------------------------");
         }
     }

@@ -4,7 +4,7 @@ public class Atividade05 {
 polegadas. Sabendo que 1 metro equivale a 39,3700787 polegadas, crie um programa que faça
 o cálculo de quantas polegadas equivale a 30 metros. */
         double metros = 30;
-        double polegadas = metros*39.3700787;
+        double polegadas = metros * 39.3701;
         System.out.println("-------------------------------------------------");
         System.out.printf("Polegadas: %.2f\n", polegadas);
         System.out.println("-------------------------------------------------");
