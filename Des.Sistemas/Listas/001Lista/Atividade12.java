@@ -6,9 +6,9 @@ faça o cálculo utilizando a equação do movimento retilíneo uniforme. */
 
         double velocidade = 15; // m/s
         
-        double distancia = 0 + velocidade * 3000; // distancia em metros | MRUV
+        double distancia = velocidade * 3000; // distancia em metros | MRUV
 
-        double distanciaFinal = distancia / 1000;
+        double distanciaFinal = distancia / 1000; // distancia em KM
 
         System.out.println("-------------------------------------------------");
         System.out.printf("Distancia Percorrida: %.1fKm\n", distanciaFinal);
