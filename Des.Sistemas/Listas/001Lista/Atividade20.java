@@ -13,19 +13,19 @@ public class Atividade20 {
             numeros[i] = scan.nextInt();
         }
         scan.close();
-        if(numeros[0] > numeros[1] && numeros[0] > numeros[2]){
+        if(numeros[0] < numeros[1] && numeros[0] < numeros[2]){
             System.out.println("-------------------------------------------------");
-            System.out.printf("Maior numero: %s\n", numeros[0]);
+            System.out.printf("Menor numero: %s\n", numeros[0]);
             System.out.println("-------------------------------------------------");
 
-        }else if(numeros[1] > numeros[0] && numeros[1] > numeros[2]){
+        }else if(numeros[1] < numeros[0] && numeros[1] < numeros[2]){
             System.out.println("-------------------------------------------------");
-            System.out.printf("Maior numero: %s\n", numeros[1]);
+            System.out.printf("Menor numero: %s\n", numeros[1]);
             System.out.println("-------------------------------------------------");
 
         }else{
             System.out.println("-------------------------------------------------");
-            System.out.printf("Maior numero: %s\n", numeros[2]);
+            System.out.printf("Menor numero: %s\n", numeros[2]);
             System.out.println("-------------------------------------------------");
         }
     }
