@@ -1,4 +1,4 @@
-import java.util.Scanner;
+mport java.util.Scanner;
 public class Questao01 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -14,12 +14,12 @@ public class Questao01 {
 
         if (numeros[0] > numeros[1]) {
             System.out.println("-------------------------------------------------");
-            System.out.printf("o 1º numero é maior que o 2º numero! %s\n", numeros[0]);
+            System.out.println("o 1º numero é maior que o 2º numero! %s");
             System.out.println("-------------------------------------------------");
 
         } else if (numeros[0] < numeros[1]) {
             System.out.println("-------------------------------------------------");
-            System.out.printf("o 2º numero é maior que o 1º numero! %s\n", numeros[0]);
+            System.out.println("o 2º numero é maior que o 1º numero! %sn");
             System.out.println("-------------------------------------------------");
 
         } else {
