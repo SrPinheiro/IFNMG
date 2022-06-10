@@ -1,5 +1,6 @@
 
 package lista02;
+/*1. Escrever um programa para exibir os números de 1 até 50 na tela.*/
 
 public class Atividade01 {
     public static void main(String[] args) {
@@ -10,3 +11,9 @@ public class Atividade01 {
     }
     
 }
+/**
+ * Codigo feito por Leonardo Pinheiro
+ * Turma: Info 0121
+ * IFNMG - Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ */
