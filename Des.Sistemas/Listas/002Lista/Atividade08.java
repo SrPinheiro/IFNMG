@@ -1,131 +1,38 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package lista02;
 
-import java.util.Scanner;
-
-public class Atividade08 {
-    /*3. Construa um programa conversor de escalas de temperaturas. O usuário deverá escolher de
-qual escala para qual escala deseja fazer a conversão, solicitar o valor e em seguida imprimir o
-valor correspondente na nova escala:*/
-    public static void main(String[] args) {
-        byte opcao;
-        double resultado;
-        double temperatura;
-        
-        Scanner scan = new Scanner(System.in);
-        
-        whileExterno: while(true){
-            System.out.println("-------------------------------------------------");
-            System.out.println("1. Celsius para Kelvin");
-            System.out.println("2. Celsius para Fahrenheit");
-            System.out.println("3. Fahrenheit para Celsius");
-            System.out.println("4. Kelvin para Celsius");
-            System.out.println("5. Fahrenheit para Kelvin");
-            System.out.println("6. Kelvin para Fahrenheit");
-            System.out.println("7. Sair do Programa");
-            System.out.println("-------------------------------------------------");
-            opcao = scan.nextByte();
-            
-            switch(opcao){
-                case 1:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Celsius:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = temperatura + 273.15;
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Celsius: %.2f\n", temperatura);
-                    System.out.printf("Kelvin: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                    
-                case 2:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Celsius:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = (temperatura * 1.8) + 32;
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Celsius: %.2f\n", temperatura);
-                    System.out.printf("Fahrenheit: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                    
-                case 3:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Fahrenheit:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = (temperatura - 32) / 1.8;
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Fahrenheit: %.2f\n", temperatura);
-                    System.out.printf("Celsius: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                    
-                case 4:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Kelvin:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = temperatura - 273.15;
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Kelvin: %.2f\n", temperatura);
-                    System.out.printf("Celsius: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                    
-                case 5:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Fahrenheit:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = (temperatura  + 459.67) * 5/9; //formula: K = (°F + 459,67) x 5/9
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Fahrenheit: %.2f\n", temperatura);
-                    System.out.printf("Kelvin: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                    
-                case 6:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Digite a temperatura em Kelvin:");
-                    System.out.println("-------------------------------------------------");
-                    
-                    temperatura = scan.nextDouble();
-                    resultado = temperatura * 1*8 - 459.67; //formula: Kelvin x 1.8 - 459.67
-                    
-                    System.out.println("-------------------------------------------------");
-                    System.out.printf("Kelvin: %.2f\n", temperatura);
-                    System.out.printf("Fahrenheit: %.2f\n", resultado);
-                    System.out.println("-------------------------------------------------");
-                    break;
-                case 7:
-                    System.out.println("-------------------------------------------------");
-                    System.out.println("Programa Encerrado!");
-                    System.out.println("-------------------------------------------------");
-                    break whileExterno;
-                        
-            }
-            
-        }
-    }
-    
-}
 /**
- * Codigo feito por Leonardo Pinheiro
- * IDE: Intellij IDEA - JetBrains
- * Turma: Info 0121
- * IFNMG - Campus Almenara
- * GitHub: https://github.com/SrPinheiro
+ *
+ * @author ifnmg
  */
+import java.util.Scanner;
+public class Atividade08 {
+    /*4. Construa um programa que imprima a Tabuada da divisão e multiplicação
+de um determinando inteiro informado pelo usuário. A tabuada deve
+apresentar das operações e os resultados entre o número e os números
+do intervalo entre 1 e 10.*/
+    
+    public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+
+            System.out.println("-------------------------------------------------");
+            System.out.println("Informe um numero:");
+            System.out.println("-------------------------------------------------");		
+            int numero = scan.nextInt();
+
+            System.out.println("-------------------Tabuada:----------------------");
+            for(byte i = 0; i<=10; i++){
+                System.out.printf("%d x %d = %d\n", numero, i, numero * i);
+            }
+            System.out.println("-------------------------------------------------");  
+            for(byte i = 1; i<=10; i++){
+                System.out.printf("%d ÷ %d = %.2f\n", numero, i, (double) numero / i);
+            }
+            System.out.println("-------------------------------------------------");
+
+    }
+}
