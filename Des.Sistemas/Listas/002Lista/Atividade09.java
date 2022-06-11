@@ -1,16 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package lista02;
-
 import java.util.Scanner;
 
-/**
- *
- * @author ifnmg
- */
 public class Atividade09 {
     /*5. O fatorial de um número n (n pertence ao conjunto dos números naturais) é sempre o produto
 de todos os seus antecessores, incluindo si próprio e excluindo o zero. Exemplo de número
@@ -37,3 +26,10 @@ e imprima o seu fatorial.*/
         
     }
 }
+/**
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA - JetBrains
+ * Turma: Info 0121
+ * IFNMG - Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ */

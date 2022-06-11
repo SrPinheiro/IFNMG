@@ -1,5 +1,3 @@
-package lista02;
-
 import java.util.Scanner;
 
 public class Atividade06 {

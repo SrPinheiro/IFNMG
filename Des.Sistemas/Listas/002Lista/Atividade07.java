@@ -1,13 +1,10 @@
-
-package lista02;
-
 import java.util.Scanner;
 
 public class Atividade07 {
     /*3. Construa um programa conversor de escalas de temperaturas. O usuário deverá escolher de
 qual escala para qual escala deseja fazer a conversão, solicitar o valor e em seguida imprimir o
 valor correspondente na nova escala:*/
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         byte opcao;
         double resultado;
         double temperatura;
@@ -39,6 +36,7 @@ valor correspondente na nova escala:*/
                     System.out.printf("Celsius: %.2f\n", temperatura);
                     System.out.printf("Kelvin: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                     
                 case 2:
@@ -53,6 +51,7 @@ valor correspondente na nova escala:*/
                     System.out.printf("Celsius: %.2f\n", temperatura);
                     System.out.printf("Fahrenheit: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                     
                 case 3:
@@ -67,6 +66,7 @@ valor correspondente na nova escala:*/
                     System.out.printf("Fahrenheit: %.2f\n", temperatura);
                     System.out.printf("Celsius: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                     
                 case 4:
@@ -81,6 +81,7 @@ valor correspondente na nova escala:*/
                     System.out.printf("Kelvin: %.2f\n", temperatura);
                     System.out.printf("Celsius: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                     
                 case 5:
@@ -95,6 +96,7 @@ valor correspondente na nova escala:*/
                     System.out.printf("Fahrenheit: %.2f\n", temperatura);
                     System.out.printf("Kelvin: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                     
                 case 6:
@@ -103,12 +105,13 @@ valor correspondente na nova escala:*/
                     System.out.println("-------------------------------------------------");
                     
                     temperatura = scan.nextDouble();
-                    resultado = temperatura * 1*8 - 459.67; //formula: Kelvin x 1.8 - 459.67
+                    resultado = (temperatura - 273.15) * 9/5 + 32; //formula: (K − 273,15) × 9/5 + 32
                     
                     System.out.println("-------------------------------------------------");
                     System.out.printf("Kelvin: %.2f\n", temperatura);
                     System.out.printf("Fahrenheit: %.2f\n", resultado);
                     System.out.println("-------------------------------------------------");
+                    Thread.sleep(1500);
                     break;
                 case 7:
                     System.out.println("-------------------------------------------------");

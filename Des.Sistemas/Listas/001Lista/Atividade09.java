@@ -79,7 +79,7 @@ determinado valor em real e faça a conversão. Imprima o resultado. */
     static float dolares(){
         //Isso aqui é uma função que puxa o valor do dolar pela internet ^^
         String sb="";
-        float a = 0;
+        float resultado = 0;
         try{
             //aqui o programa vai fazer uma tentativa de se comunicar com a API
         URL url =  new URL("https://economia.awesomeapi.com.br/json/last/USD-BRL"); // site que contem a cotacao em tempo real
@@ -91,14 +91,14 @@ determinado valor em real e faça a conversão. Imprima o resultado. */
                 Scanner scn = new Scanner(url.openStream());
                 sb = new String(scn.nextLine());
                 //substring vai separar o valor do dolar do resto da String
-                a = Float.parseFloat(sb.substring(155,161));
+                resultado = Float.parseFloat(sb.substring(155,161));
             }
         }
         catch(Exception e){
             // vai retornar o valor "-404.404" caso a função não consiga obter o valor do dolar automaticamente
-            a = -404.404f;
+            resultado = -404.404f;
         }
-        return a;
+        return resultado;
     }
 }
 /**

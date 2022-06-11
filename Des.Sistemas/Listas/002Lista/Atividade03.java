@@ -1,5 +1,3 @@
-package lista02;
-
 /*3. Construa um programa que solicite infinitos números inteiros ao usuário, e ao informar o valor
 “0”, o programa imprima quantos números pares foram digitados.*/
 
@@ -32,6 +30,7 @@ public class Atividade03 {
 }
 /**
  * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA - JetBrains
  * Turma: Info 0121
  * IFNMG - Campus Almenara
  * GitHub: https://github.com/SrPinheiro

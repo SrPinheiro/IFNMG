@@ -1,22 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package lista02;
-
-/**
- *
- * @author ifnmg
- */
 import java.util.Scanner;
 public class Atividade08 {
-    /*4. Construa um programa que imprima a Tabuada da divisão e multiplicação
-de um determinando inteiro informado pelo usuário. A tabuada deve
-apresentar das operações e os resultados entre o número e os números
-do intervalo entre 1 e 10.*/
-    
     public static void main(String[] args) {
+        /*4. Construa um programa que imprima a Tabuada da divisão e multiplicação
+        de um determinando inteiro informado pelo usuário. A tabuada deve
+        apresentar das operações e os resultados entre o número e os números
+        do intervalo entre 1 e 10.*/
+
             Scanner scan = new Scanner(System.in);
 
             System.out.println("-------------------------------------------------");
@@ -36,3 +25,10 @@ do intervalo entre 1 e 10.*/
 
     }
 }
+/**
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA - JetBrains
+ * Turma: Info 0121
+ * IFNMG - Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ */

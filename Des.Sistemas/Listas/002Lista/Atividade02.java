@@ -1,8 +1,4 @@
-package lista02;
-
 /*2. Construa um programa para encontrar todos os números pares entre 1 e 100.*/
-
-
 public class Atividade02 {
     public static void main(String[] args) {
         byte par = 0;
@@ -22,6 +18,7 @@ public class Atividade02 {
 }
 /**
  * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA - JetBrains
  * Turma: Info 0121
  * IFNMG - Campus Almenara
  * GitHub: https://github.com/SrPinheiro

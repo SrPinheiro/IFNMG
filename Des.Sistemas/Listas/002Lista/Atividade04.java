@@ -3,9 +3,6 @@
 programa deve solicitar que o usuário informe dois números, calcular a operação
 escolhida e imprimir o resultado e apresentar o menu novamente. Ao selecionar a
 opção 5 o programa deve ser finalizado.*/
-
-package lista02;
-
 import java.util.Scanner;
 
 public class Atividade04 {
@@ -95,6 +92,7 @@ public class Atividade04 {
 }
 /**
  * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA - JetBrains
  * Turma: Info 0121
  * IFNMG - Campus Almenara
  * GitHub: https://github.com/SrPinheiro

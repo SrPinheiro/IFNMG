@@ -1,5 +1,3 @@
-
-package lista02;
 /*1. Escrever um programa para exibir os números de 1 até 50 na tela.*/
 
 public class Atividade01 {
