@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Random;
 
 public class Escola {
     static ArrayList<Aluno> chamada = new ArrayList<Aluno>();
