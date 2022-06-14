@@ -1,0 +1,1 @@
+public class teste{ public static void main(String[] args){ double a = 2; switch((int)a){case 1:{System.out.println("ola mundo");break;}case 2:{System.out.println("ola mundo 2"); break;}}}}

@@ -1,6 +1,6 @@
 public class Aluno {
    private String nome;
-   private int matricula;
+   private long matricula;
    private String curso;
 
    private int idade;
@@ -8,13 +8,12 @@ public class Aluno {
    private String responsavel;
 
 
-   public int getMatricula() {
+   public long getMatricula() {
       return matricula;
    }
 
-   public boolean setMatricula(int matricula) {
+   public void setMatricula(long matricula) {
       this.matricula = matricula;
-      return true;
    }
 
    public String getCurso() {
@@ -29,12 +28,9 @@ public class Aluno {
       return idade;
    }
 
-   public boolean setIdade(int idade) {
+   public void setIdade(int idade){
       if(idade > 0){
          this.idade = idade;
-         return true;
-      }else{
-         return false;
       }
    }
 
@@ -42,27 +38,38 @@ public class Aluno {
       return sexo;
    }
 
-   public boolean setSexo(Sexo sexo) {
+   public void setSexo(Sexo sexo) {
       this.sexo = sexo;
-      return true;
    }
 
    public String getResponsavel() {
       return responsavel;
    }
 
-   public boolean setResponsavel(String responsavel) {
+   public void setResponsavel(String responsavel) {
       this.responsavel = responsavel;
-      return true;
    }
 
-   public boolean setNome(String nome){
+   public void setNome(String nome){
        this.nome = nome;
-       return true;
    }
 
    public String getNome(){
       return this.nome;
    }
 
+   @Override
+   public String toString() {
+      return Long.toString(this.getMatricula());
+   }
+
+   @Override
+   public boolean equals(Object obj) {
+      if(obj instanceof Aluno aluno){
+         return aluno.getMatricula() == this.getMatricula();
+
+      }else{
+         return false;
+      }
+   }
 }
