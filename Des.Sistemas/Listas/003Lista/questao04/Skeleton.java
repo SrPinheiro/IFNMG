@@ -8,7 +8,7 @@ public class Skeleton extends Entidade{
 
     @Override
     public void setVida(int vida){
-        //a vida do zombie nunca sera regenerada
+        //a vida do Skeleto nunca sera regenerada
         if(vida <= this.getVida()){
             super.setVida(vida);
         }
