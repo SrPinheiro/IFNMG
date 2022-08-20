@@ -1,0 +1,51 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "ALUNO" (
+	"idaluno"	INTEGER,
+	"cidade"	varchar(45),
+	"nome"	varchar(45),
+	PRIMARY KEY("idaluno" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS "ALUNOCURSO" (
+	"idaluno"	INTEGER,
+	"idcurso"	INTEGER,
+	FOREIGN KEY("idaluno") REFERENCES "ALUNO"("idaluno"),
+	FOREIGN KEY("idcurso") REFERENCES "CURSO"("idcurso"),
+	PRIMARY KEY("idaluno","idcurso")
+);
+CREATE TABLE IF NOT EXISTS "CURSO" (
+	"idcurso"	INTEGER,
+	"sigla"	varchar(2),
+	"nome"	varchar(45),
+	PRIMARY KEY("idcurso" AUTOINCREMENT)
+);
+INSERT INTO "ALUNO" ("idaluno","cidade","nome") VALUES (145,'jequitinhonha','Leo'),
+ (146,'almenara','leo2'),
+ (147,'almenara','jubileu'),
+ (148,'almenara','gargamel'),
+ (149,'jequitinhonha','arivederte'),
+ (150,'jequitinhonha','naju'),
+ (151,'Rubim','hallina'),
+ (152,'rubim','Vitoria'),
+ (153,'Rubim','Bernardo'),
+ (154,'BH','Allef');
+INSERT INTO "ALUNOCURSO" ("idaluno","idcurso") VALUES (145,2),
+ (146,3),
+ (147,4),
+ (148,5),
+ (149,6),
+ (150,7),
+ (151,8),
+ (152,9),
+ (153,11),
+ (154,10);
+INSERT INTO "CURSO" ("idcurso","sigla","nome") VALUES (2,'IF','INFORMATICA'),
+ (3,'IF','ADMINISTRACAO'),
+ (4,'IF','ZOOTECNIA'),
+ (5,'IF','ADS'),
+ (6,'IF','ENGENHARIA'),
+ (7,'IF','DESIGN'),
+ (8,'IF','MANUTENCAO DE DISPOSITIVOS'),
+ (9,'IF','BANCO DE DADOS'),
+ (10,'IF','CASTRADOR DE GADO'),
+ (11,'IF','CURSO DA ANITTA');
+COMMIT;
