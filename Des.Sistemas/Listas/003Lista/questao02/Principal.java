@@ -2,16 +2,21 @@ package questao02;
 
 public class Principal {
     public static void main(String[] args) {
-        Cafeteira cafe1 = new Cafeteira("PoliShop");
-        double[][] notas = new double[2][1];
+        Cafeteira cafeteira = new Cafeteira("PoliShop");
 
-        cafe1.addCafe();
-        cafe1.addAgua();
-        cafe1.beber();
+        cafeteira.prepararCafe();// vai preparar o cafe
+        cafeteira.beber();// vai beber o cafe
+        cafeteira.prepararCafe(); // vai pedir para limpar a cafeteira
+        cafeteira.limpar(); // vai limpar a cafeteira
+        cafeteira.prepararCafe(); // vai preparar o cafe
 
     }
 }
-
-/*Construa uma classe que represente computacionalmente uma cafeteira. Adicione os seus atributos e comportamentos.
-Lembre-se que, para fazer um café é preciso adicionar água e pó de café. Após ter bebido todo o café, é preciso
-limpar e adicionar água novamente caso queria fazer um outro café. Construa o diagrama UML para a classe criada.*/
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

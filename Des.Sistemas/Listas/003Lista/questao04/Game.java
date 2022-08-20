@@ -28,14 +28,22 @@ public class Game {
         System.out.printf("Vida do zumbi: %s\n", zumbi1.getVida());
 
         //testando movimento
-        System.out.printf("Posicao do jogador2: %s\n",player2.getPosicao());
+        System.out.printf("Posicao do jogador2: %s\n", player2.getPosicao());
         player2.andar(DIRECAO.CIMA);
         player2.andar(DIRECAO.CIMA);
         player2.andar(DIRECAO.CIMA);
         player2.andar(DIRECAO.DIREITA);
         player2.andar(DIRECAO.DIREITA);
         player2.andar(DIRECAO.DIREITA);
-        System.out.printf("Posicao do jogador2: %s\n",player2.getPosicao());
+        System.out.printf("Posicao do jogador2: %s\n", player2.getPosicao());
 
     }
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

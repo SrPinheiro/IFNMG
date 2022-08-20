@@ -9,14 +9,14 @@ public abstract class Entidade {
     private int y;
 
 
-    Entidade(String nome, int vida, int forca, int defesa){
+    Entidade(String nome, int vida, int forca, int defesa) {
         this.nome = nome;
         this.vida = vida;
         this.forca = forca;
         this.defesa = defesa;
     }
 
-    public void Informacoes(){
+    public void Informacoes() {
         System.out.println("=================================================");
         System.out.printf("Nome: %s\n", this.getNome());
         System.out.printf("Vida: %s\n", this.getVida());
@@ -26,9 +26,9 @@ public abstract class Entidade {
         System.out.println("=================================================");
     }
 
-    public void andar(DIRECAO direcao){
-        if(this.getVida() > 0){
-            switch (direcao){
+    public void andar(DIRECAO direcao) {
+        if (this.getVida() > 0) {
+            switch (direcao) {
                 case CIMA:
                     this.y += 1;
                     break;
@@ -43,9 +43,12 @@ public abstract class Entidade {
             }
         }
     }
-    public void atacar(Entidade alvo){
-        if(this.getVida() > 0 && alvo.getVida() > 0){
-            alvo.setVida((int) alvo.getVida() + alvo.getDefesa() - this.getForca());
+
+    public void atacar(Entidade alvo) {
+        if (this.getVida() > 0 && alvo.getVida() > 0) {
+            if(this.getForca() - alvo.getDefesa() > 0){
+                alvo.setVida((int) alvo.getVida() - (this.getForca() - alvo.getDefesa()));
+            }
         }
     }
 
@@ -53,11 +56,11 @@ public abstract class Entidade {
         return nome;
     }
 
-    public int getVida(){
+    public int getVida() {
         return this.vida;
     }
 
-    public void setVida(int vida){
+    public void setVida(int vida) {
         this.vida = vida;
     }
 
@@ -69,7 +72,7 @@ public abstract class Entidade {
         return defesa;
     }
 
-    public String getPosicao(){
+    public String getPosicao() {
         return this.getX() + "," + this.getY();
     }
 
@@ -82,3 +85,11 @@ public abstract class Entidade {
     }
 
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

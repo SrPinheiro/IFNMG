@@ -5,9 +5,9 @@ public class Principal {
         Carro caro1 = new Carro("Ferrari", 400);
 
         System.out.println("=====================================");
-        System.out.printf("Marca: %s\n",caro1.getMARCA());
+        System.out.printf("Marca: %s\n", caro1.getMARCA());
         System.out.printf("VelocidadeMAX: %s\n", caro1.getVELOCIDADEMAX());
-        System.out.printf("Potencia: %.2f\n", caro1.getPOTENCIA() );
+        System.out.printf("Potencia: %.2f\n", caro1.getPOTENCIA());
         System.out.println("=====================================");
 
         caro1.girarChave();
@@ -28,3 +28,11 @@ public class Principal {
 
     }
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

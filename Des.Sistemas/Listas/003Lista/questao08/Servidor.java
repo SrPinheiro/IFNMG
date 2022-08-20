@@ -9,7 +9,7 @@ public class Servidor {
     private Scanner scan = new Scanner(System.in);
     private List<Cliente> clientes = new ArrayList<>();
 
-    Servidor(){
+    Servidor() {
         this.clientes.add(new Cliente("Leonardo", "123", true)); // clientes padrao
         this.clientes.add(new Cliente("Larissa", "321", true));
 
@@ -17,8 +17,8 @@ public class Servidor {
         this.clientes.get(1).getConta().depositar(200);
     }
 
-    public void menu(){
-        while (true){
+    public void menu() {
+        while (true) {
             System.out.println("=================Bem-Vindo==============================");
             System.out.println("0 - Cadastrar Cliente");
             System.out.println("1 - listarContas/Clientes");
@@ -29,7 +29,7 @@ public class Servidor {
             byte opcao = Byte.parseByte(scan.nextLine());
 
             switch (opcao) {
-                case 0 -> this.CadstrarCliente();
+                case 0 -> this.cadstrarCliente();
                 case 1 -> this.listarContas();
                 case 2 -> this.transferencia();
                 case 3 -> this.depositar();
@@ -48,8 +48,8 @@ public class Servidor {
 
         Cliente conta = encontrar(cpf);
 
-        if(conta != null){
-            if(conta.getConta().sacar(valor)){
+        if (conta != null) {
+            if (conta.getConta().sacar(valor)) {
                 System.out.println("Valor sacado!");
                 return;
             }
@@ -68,11 +68,11 @@ public class Servidor {
 
         Cliente cliente = encontrar(cpf);
 
-        if(cliente != null){
-           if(cliente.getConta().depositar(valor)){
-               System.out.println("Valor depositado!");
-               return;
-           }
+        if (cliente != null) {
+            if (cliente.getConta().depositar(valor)) {
+                System.out.println("Valor depositado!");
+                return;
+            }
         }
 
         System.out.println("Algo deu errado, tente novamente!");
@@ -80,8 +80,7 @@ public class Servidor {
     }
 
 
-
-    private void CadstrarCliente(){
+    private void cadstrarCliente() {
         System.out.println("Digite o nome do Cliente");
         String nome = scan.nextLine();
 
@@ -95,9 +94,9 @@ public class Servidor {
 
     }
 
-    private void listarContas(){
+    private void listarContas() {
         System.out.println("======================================================");
-        for(var k1: clientes){
+        for (var k1 : clientes) {
             System.out.printf("Cliente: %s, Conta: %s R$: %s\n", k1.getNome(), k1.getConta(), k1.getConta().getSaldo());
             System.out.println("**");
         }
@@ -117,8 +116,8 @@ public class Servidor {
         Cliente principal = this.encontrar(cpf);
         Cliente destino = this.encontrar(cpf2);
 
-        if(principal != null && destino != null){
-            if(principal.getConta().transferir(destino.getConta(), valor)){
+        if (principal != null && destino != null) {
+            if (principal.getConta().transferir(destino.getConta(), valor)) {
                 System.out.println("valor Transferido");
                 return;
             }
@@ -126,13 +125,16 @@ public class Servidor {
         System.out.println("Voce digitou algum valor errado, tente novamente!");
     }
 
-    private Cliente encontrar(String cpf){
-        for(var k1: clientes){
-            if(k1.getCpf().equals(cpf)){
-                return k1;
-            }
-        }
-        return null;
+    private Cliente encontrar(String cpf) {
+        return this.clientes.stream().filter(c-> c.getCpf().equalsIgnoreCase(cpf)).findFirst().orElse(null);
     }
 
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

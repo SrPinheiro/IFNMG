@@ -7,13 +7,23 @@ public class Carro {
     private int numeroDePortas;
     private Motor motor;
 
-    public void ligar(){
+    public void ligar() {
         motor.ligar();
     }
-    public void desligar(){
+
+    public void desligar() {
         motor.desligar();
     }
-    public void acelerar(){
+
+    public void acelerar() {
         motor.acelerar();
     }
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */

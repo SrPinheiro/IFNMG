@@ -6,21 +6,30 @@ import java.util.List;
 
 public class Cliente {
     private String nome;
-    private String cpf;
+    private final String CPF;
     private Date nascimento;
     private SEXO sexo;
+    private final List<Carrinho> COMPRAS = new ArrayList<>();
 
-    private final List<Carrinho> carrinho = new ArrayList<>();
-
-    Cliente(String nome, String cpf, SEXO sexo){
+    Cliente(String nome, String CPF, SEXO sexo) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.CPF = CPF;
         this.sexo = sexo;
         this.nascimento = new Date();
-
     }
-    public void addCompra(){
-        this.carrinho.add(new Carrinho(this));
+    public boolean addCompra(Carrinho carrinho){
+        if (carrinho.getQuantidadeProdutos() > 0){
+            this.COMPRAS.add(carrinho);
+            return true;
+        }
+        return false;
+    }
+
+    public void mostrarCompras(){
+        for(Carrinho c: this.COMPRAS){
+            c.mostrarCarrinho();
+            System.out.println("");
+        }
     }
 
     public String getNome() {
@@ -32,11 +41,7 @@ public class Cliente {
     }
 
     public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+        return CPF;
     }
 
     public Date getNascimento() {
@@ -55,9 +60,12 @@ public class Cliente {
         this.sexo = sexo;
 
     }
-
-
-    public List getCompras(){
-        return this.carrinho;
-    }
 }
+/*
+ * Codigo feito por Leonardo Pinheiro
+ * IDE: Intellij IDEA — JetBrains
+ * Turma: Info 0121
+ * IFNMG — Campus Almenara
+ * GitHub: https://github.com/SrPinheiro
+ * Data:
+ */
