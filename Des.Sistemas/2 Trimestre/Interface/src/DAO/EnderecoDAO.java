@@ -1,7 +1,7 @@
 
-package Estagio.DAO;
+package DAO;
 
-import Estagio.model.Endereco;
+import model.Endereco;
 
 
 public interface EnderecoDAO {
@@ -9,5 +9,6 @@ public interface EnderecoDAO {
     void salvar(Endereco endereco);
     Endereco getEndereco(long ID);
     void remove(Endereco endereco);
+    void remove(long ID);
     
 }

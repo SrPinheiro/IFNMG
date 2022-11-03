@@ -1,6 +1,6 @@
 package Estagio;
 
-import Estagio.model.Endereco;
+import model.Endereco;
 
 
 public class Estagio {
@@ -10,7 +10,7 @@ public class Estagio {
         String bairro = "Darwin Cordeiro";
         String rua = "Jubileu Da Silva";
         
-        Endereco endereco = new Endereco(estado, cidade, bairro, rua);
+        Endereco endereco = new Endereco( 213312, estado, cidade, bairro, rua);
         
         
         

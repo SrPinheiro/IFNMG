@@ -1,4 +1,4 @@
-package Estagio.model;
+package model;
 
 public class Endereco {
     private static long id_s = 0;
