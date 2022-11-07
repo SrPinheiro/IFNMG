@@ -4,7 +4,7 @@ import model.Endereco;
 
 
 public class Estagio {
-    public static void main(String[] args) {
+   /* """public static void main(String[] args) {
         String estado = "minas Gerais";
         String cidade = "Almenara";
         String bairro = "Darwin Cordeiro";
@@ -14,6 +14,6 @@ public class Estagio {
         
         
         
-    }
-    
+    }*/
+      
 }
